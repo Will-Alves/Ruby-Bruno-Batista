@@ -1,0 +1,19 @@
+Quando('realizo acoes com o teclado') do
+    visit '/users/new'
+    find('#user_name').send_keys(:page_down)
+    find('input[value="Criar"]').send_keys(:enter)
+    sleep 4
+end
+
+
+
+# :CANCEL :HELP :BACKSPACE :TAB :CLEAR :RETURN :ENTER :SHIFT 
+# :CONTROL :ALT :PAUSE :ESCAPE :SPACE :PAGE_UP
+# :PAGE_DOWN :END :HOME :LEFT :UP :RIGHT :DOWN :INSERT 
+# :DELETE :SEMICOLON :EQUALS :NUMPAD0 :NUMPAD1 :NUMPAD2
+# :NUMPAD3 :NUMPAD4 :NUMPAD5 :NUMPAD6 :NUMPAD7 :NUMPAD8 
+# :NUMPAD9 :MULTIPLY - NUMERIC KEYPAD * :ADD -
+# NUMERIC KEYPAD + :SEPARATOR - NUMERIC KEYPAD 'SEPARATOR' KEY ?? 
+# :SUBTRACT - NUMERIC KEYPAD - 
+# :DECIMAL -NUMERIC KEYPAD . :DIVIDE -
+#  NUMERIC KEYPAD / :F1 :F2 :F3 :F4 :F5 :F6 :F7 :F8 :F9 :F10 :F11 :F12 :META :COMMAND
